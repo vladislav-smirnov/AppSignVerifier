@@ -31,3 +31,32 @@ google-services.json
 
 # Android Profiling
 *.hprof
+
+
+# built application files
+*.ap_
+
+# Mac files
+.DS_Store
+
+# files for the dex VM
+*.dex
+
+# Java class files
+*.class
+
+# generated files
+bin/
+gen/
+
+# Android Studio/IDEA
+.idea
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+/captures
+.externalNativeBuild
+.cxx
