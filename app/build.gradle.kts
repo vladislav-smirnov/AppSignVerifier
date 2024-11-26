@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "io.github.airdaydreamers.appsignverifier.demo"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "io.github.airdaydreamers.appsignverifier.demo"

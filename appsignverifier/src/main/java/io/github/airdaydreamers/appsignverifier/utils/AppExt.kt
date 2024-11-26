@@ -18,6 +18,7 @@ package io.github.airdaydreamers.appsignverifier.utils
 
 import android.content.Context
 import android.content.pm.PackageManager
+import androidx.annotation.VisibleForTesting
 import io.github.airdaydreamers.appsignverifier.data.repo.AppInfoRepoImpl
 import io.github.airdaydreamers.appsignverifier.domain.repo.AppInfoRepository
 import io.github.airdaydreamers.appsignverifier.domain.usecase.IsAppInSystemPartitionUseCase
@@ -34,9 +35,10 @@ import io.github.airdaydreamers.appsignverifier.domain.usecase.HasSystemSignatur
  */
 fun Context.isSystemApp(
     packageName: String = this.packageName,
-    packageManager: PackageManager = this.packageManager
+    packageManager: PackageManager = this.packageManager,
+    @VisibleForTesting
+    repository: AppInfoRepository = AppInfoRepoImpl(packageManager)
 ): Boolean {
-    val repository: AppInfoRepository = AppInfoRepoImpl(packageManager)
 
     val useCase1 = HasSystemSignatureUseCase(repository)
     val useCase2 = IsSignedBySystemUseCase(repository)
