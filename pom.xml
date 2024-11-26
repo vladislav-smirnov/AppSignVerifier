@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>io.github.airdaydreamers.appsignverifier</groupId>
+    <artifactId>appsignverifier-project</artifactId>
+    <version>0.8.2-alpha</version>
+    <packaging>pom</packaging>
+    <name>Project</name>
+    <url>https://github.com/vladislav-smirnov/</url>
+
+
+    <modules>
+        <module>appsignverifier</module>
+    </modules>
+
+    <scm>
+        <connection>scm:git:git://github.com/vladislav-smirnov/AppSignVerifier.git</connection>
+        <developerConnection>scm:git:ssh://github.com:vladislav-smirnov/AppSignVerifier.git</developerConnection>
+        <url>https://github.com/vladislav-smirnov/AppSignVerifier</url>
+    </scm>
+
+    <properties>
+        <!-- Android configs -->
+        <android.platform>29</android.platform>
+        <android.debug>false</android.debug>
+        <proguard.skip>true</proguard.skip>
+    </properties>
+
+    <repositories>
+        <repository>
+            <id>google</id>
+            <url>https://maven.google.com/</url>
+        </repository>
+        <repository>
+            <id>central</id>
+            <url>https://repo.maven.apache.org/maven2</url>
+        </repository>
+        <repository>
+            <id>google-lib</id>
+            <url>https://dl.google.com/dl/android/maven2/</url>
+        </repository>
+    </repositories>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>com.simpligility.maven.plugins</groupId>
+                    <artifactId>android-maven-plugin</artifactId>
+                    <version>4.6.0</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+
+        <plugins>
+            <plugin>
+                <groupId>com.simpligility.maven.plugins</groupId>
+                <artifactId>android-maven-plugin</artifactId>
+                <version>4.6.0</version>
+            </plugin>
+        </plugins>
+    </build>
+</project>
