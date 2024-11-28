@@ -1,5 +1,7 @@
 # App Signature Verifier
 
+![Maven Central Version](https://img.shields.io/maven-central/v/io.github.airdaydreamers.appsignverifier/appsignverifier) | [![CI](https://github.com/vladislav-smirnov/AppSignVerifier/actions/workflows/gradle.yml/badge.svg)](https://github.com/vladislav-smirnov/AppSignVerifier/actions/workflows/gradle.yml)
+
 **App Signature Verifier** is a utility library for Android that provides tools to verify various properties of applications, such as checking if an app is signed by the system, if it is a privileged app, or if it resides in the system partition. The library is designed following Clean Architecture principles to ensure modularity, testability, and maintainability.
 
 ---
@@ -32,7 +34,7 @@ To add this library to your Android project, follow these steps:
 
    ```gradle
    dependencies {
-       implementation 'io.github.airdaydreamers:appsignverifier:xxx'
+       implementation("io.github.airdaydreamers.appsignverifier:appsignverifier:xxx")
    }
    ```
 
